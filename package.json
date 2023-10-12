@@ -1,0 +1,32 @@
+{
+  "name": "melonity-d-gen",
+  "version": "1.0.0",
+  "description": "Melonity docs generator",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node dist/main",
+    "format": "npx prettier src --write",
+    "dev": "nodemon --exec node -r @swc-node/register src/main.ts",
+    "terpila": "nodemon src/main.ts",
+    "build": "swc ./src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qweme32/melonity-d-gen.git"
+  },
+  "author": "Qweme Dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qweme32/melonity-d-gen/issues"
+  },
+  "homepage": "https://github.com/qweme32/melonity-d-gen#readme",
+  "devDependencies": {
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.92",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "swc": "^1.0.11",
+    "swc-node": "^1.0.0"
+  }
+}

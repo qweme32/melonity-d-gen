@@ -1,4 +1,6 @@
 # Logs
+*.d.ts
+*.d.json
 logs
 *.log
 npm-debug.log*
